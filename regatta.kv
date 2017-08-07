@@ -8,9 +8,11 @@
             size_hint_y: None
             height: self.minimum_height
             Button:
-                text: "MyButton 1"
+                text: "End app"
                 size_hint_y: None
                 height: root.height / 5
+                on_release: app.stop()
+                trigger_action: 0
             Label:
                 text: "MyTest 2"
                 size_hint_y: None
