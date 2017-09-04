@@ -24,6 +24,7 @@ python main.py
 This should create a apk file that can be installed on an Andoid phone or tablet
 ```
 sudo apt install python-setuptools zlib1g-dev cython openjdk-8-jdk python-pip aidl:i386
+pip install python-for-android
 cd ..
 git clone https://github.com/kivy/buildozer.git
 cd buildozer
