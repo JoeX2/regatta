@@ -1,91 +1,68 @@
 #:kivy 1.7.2
 
-<RegattaTimeTable>:
-    ScrollView:
-        size: root.size
-        GridLayout:
-            cols: 2
-            size_hint_y: None
-            height: self.minimum_height
+<RegattaScreenManager>:
+    HomeScreen:
+
+<TimeRecordScreen>:
+    BoxLayout:
+        orientation: "vertical"
+        BoxLayout:
+            size_hint: 1,.1
+            orientation: "horizontal"
             Button:
-                text: "End app"
-                size_hint_y: None
-                height: root.height / 5
-                on_release: app.stop()
-                trigger_action: 0
-            Label:
-                text: "MyTest 2"
-                size_hint_y: None
-                height: root.height / 5
-            Button:
-                text: "MyButton 3"
-                size_hint_y: None
-                height: root.height / 5
+                text:"Post 2"
+        ScrollView:
             GridLayout:
-                cols: 3
+                orientation: "vertical"
                 size_hint_y: None
                 height: self.minimum_height
-#                padding: 5,5,5,5
+                row_default_height: root.height / 5
+                cols:2
+
                 Button:
-                    text: "MyButton 41"
-                    size_hint_y: None
-                    height: root.height/5
-                    on_release: root.buttonCallback()
+                    text: "End app"
+                    on_release: app.stop()
                     trigger_action: 0
-                Label:
-                    text: root.label_text
-                    size_hint_y: None
-                    height: root.height / 5
-            Button:
-                text: "MyButton 4"
-                size_hint_y: None
-                height: root.height / 5
-            Button:
-                text: "MyButton 5"
-                size_hint_y: None
-                height: root.height / 5
-            Button:
-                text: "MyButton 6"
-                size_hint_y: None
-                height: root.height / 5
-            Button:
-                text: "MyButton 7"
-                size_hint_y: None
-                height: root.height / 5
-            Button:
-                text: "MyButton 8"
-                size_hint_y: None
-                height: root.height / 5
-            Button:
-                text: "MyButton 9"
-                size_hint_y: None
-                height: root.height / 5
-            Button:
-                text: "MyButton 10"
-                size_hint_y: None
-                height: root.height / 5
-            Button:
-                text: "MyButton 11"
-                size_hint_y: None
-                height: root.height / 5
-            Button:
-                text: "MyButton 12"
-                size_hint_y: None
-                height: root.height / 5
-            Button:
-                text: "MyButton 13"
-                size_hint_y: None
-                height: root.height / 5
-            Button:
-                text: "MyButton 14"
-                size_hint_y: None
-                height: root.height / 5
-            Button:
-                text: "MyButton 15"
-                size_hint_y: None
-                height: root.height / 5
-            Button:
-                text: "MyButton 16"
-                size_hint_y: None
-                height: root.height / 5
+                Button:
+                    text: "Button 2"
+                Button:
+                    text: "Button 3"
+                GridLayout:
+                    cols: 2
+                    height: self.minimum_height
+                    row_default_height: root.height / 5
+                    Button:
+                        text: "MyButton 41"
+                        on_release: root.buttonCallback()
+                        trigger_action: 0
+                    Label:
+                        text: root.label_text
+                Button:
+                    text: "Button 5"
+                Button:
+                    text: "Button 6"
+                Button:
+                    text: "Button 7"
+                Button:
+                    text: "Button 8"
+                Button:
+                    text: "Button 9"
+                Button:
+                    text: "Button 10"
+                Button:
+                    text: "Button 11"
+                Button:
+                    text: "Button 12"
+                Button:
+                    text: "Button 13"
+                Button:
+                    text: "Button 14"
+                Button:
+                    text: "Button 15"
+                Button:
+                    text: "Button 16"
+                Button:
+                    text: "Button 17"
+                Button:
+                    text: "Button 18"
 
