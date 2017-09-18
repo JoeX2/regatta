@@ -25,15 +25,21 @@
                     trigger_action: 0
                     width: 100
                     size_hint_x: None
-#                    width: self.minimum_width
                 Button:
                     text: "Button 2"
-                Button:
-                    text: "Button 3"
+                GridLayout:
+                    width: 200
+                    size_hint_x: None
+                    height: self.minimum_height
+                    row_default_height: root.height / 10
+                    cols:1
+                    Button:
+                        text: "Button 31"
+                    Button:
+                        text: "Button 32"
                 GridLayout:
                     width: 100
                     size_hint_x: None
-#                    width: self.minimum_width
                     cols: 2
                     height: self.minimum_height
                     row_default_height: root.height / 5
@@ -45,42 +51,91 @@
                         text: root.label_text
                 Button:
                     text: "Button 5"
-                Button:
-                    text: "Button 6"
+                GridLayout:
+                    width: 200
+                    size_hint_x: None
+                    row_default_height: root.height / 10
+                    cols:1
+                    Button:
+                        text: "Button 61"
+                    Button:
+                        StackLayout:
+                            pos: self.parent.pos
+                            size: self.parent.size
+                            orientation: "lr-tb"
+                            Image:
+                                source: 'images/if_Change.png'
+                                size_hint_x: None
+                                width: 50
+                            Label:
+                                size_hint_x: None
+                                text: "Edit 62"
                 Label:
-                    text: "Button 7"
+                    text: "7"
+                    font_size: "50sp"
+                    bold: "true"
                     width: 100
                     size_hint_x: None
-#                    width: self.minimum_width
                 Button:
                     text: "Button 8"
-                Button:
-                    text: "Button 9"
+                GridLayout:
+                    width: 200
+                    size_hint_x: None
+                    row_default_height: root.height / 10
+                    cols:1
+                    Button:
+                        text: "Button 91"
+                    Button:
+                        text: "Button 92"
                 Label:
-                    text: "Button 10"
+                    text: "10"
+                    font_size: "50sp"
+                    bold: "true"
                     width: 100
                     size_hint_x: None
-#                    width: self.minimum_width
                 Button:
                     text: "Button 11"
-                Button:
-                    text: "Button 12"
+                GridLayout:
+                    width: 200
+                    size_hint_x: None
+                    row_default_height: root.height / 10
+                    cols:1
+                    Button:
+                        text: "Button 121"
+                    Button:
+                        text: "Button 122"
                 Label:
-                    text: "Button 13"
+                    text: "13"
+                    font_size: "50sp"
+                    bold: "true"
                     width: 100
                     size_hint_x: None
-#                    width: self.minimum_width
                 Button:
                     text: "Button 14"
-                Button:
-                    text: "Button 15"
+                GridLayout:
+                    width: 200
+                    size_hint_x: None
+                    row_default_height: root.height / 10
+                    cols:1
+                    Button:
+                        text: "Button 151"
+                    Button:
+                        text: "Button 152"
                 Label:
-                    text: "Button 16"
+                    text: "16"
+                    font_size: "50sp"
+                    bold: "true"
                     width: 100
                     size_hint_x: None
-#                    width: self.minimum_width
                 Button:
                     text: "Button 17"
-                Button:
-                    text: "Button 18"
+                GridLayout:
+                    width: 200
+                    size_hint_x: None
+                    row_default_height: root.height / 10
+                    cols:1
+                    Button:
+                        text: "Button 181"
+                    Button:
+                        text: "Button 182"
 
