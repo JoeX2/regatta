@@ -92,6 +92,7 @@ fullscreen = 0
 
 # (int) Minimum API required
 #android.minapi = 9
+android.minapi = 13 #Fixes issue with screen rotation
 
 # (int) Android SDK version to use
 #android.sdk = 20
